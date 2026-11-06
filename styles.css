@@ -49,8 +49,11 @@ h3 { line-height: 1.15; }
 .button-light { background: white; color: var(--purple); }
 .status { display: flex; align-items: center; gap: .6rem; color: #d6c9df; font-size: .9rem; }
 .status span { width: .65rem; height: .65rem; border-radius: 50%; background: var(--teal); box-shadow: 0 0 0 5px rgba(32,185,170,.18); }
-.hero-visual { display: grid; min-height: 560px; align-items: stretch; overflow: hidden; background: #f1c86a; }
-.hero-visual img { width: 100%; height: 100%; object-fit: cover; }
+.hero-visual { display: grid; min-height: 560px; align-items: center; overflow: hidden; background: #210b36; }
+.hero-image-link { position: relative; display: block; width: 100%; color: white; }
+.hero-image-link img { display: block; width: 100%; height: auto; object-fit: contain; }
+.hero-image-link > span { position: absolute; right: 1rem; bottom: 1rem; border: 1px solid rgba(255,255,255,.35); border-radius: 999px; padding: .65rem .9rem; background: rgba(29,13,43,.82); font-size: .78rem; font-weight: 800; text-decoration: none; backdrop-filter: blur(8px); }
+.hero-image-link:hover > span { background: var(--magenta); }
 
 .event-strip { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1px; background: var(--line); border-bottom: 1px solid var(--line); }
 .event-strip div { padding: 1.4rem; background: white; text-align: center; }
@@ -61,7 +64,7 @@ h3 { line-height: 1.15; }
 .section { padding: clamp(5rem, 9vw, 9rem) max(5vw, 1.25rem); }
 .section-heading { max-width: 760px; margin-bottom: 3rem; }
 .section-heading > p:last-child { color: var(--muted); font-size: 1.08rem; }
-.route-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
+.route-grid { display: grid; grid-template-columns: minmax(0, 1fr); max-width: 900px; gap: 1.5rem; }
 .route-card { position: relative; overflow: hidden; padding: clamp(1.4rem, 3vw, 2.4rem); border: 1px solid var(--line); border-radius: var(--radius); background: var(--paper); box-shadow: var(--shadow); }
 .route-card.recommended::before { position: absolute; inset: 0 auto 0 0; width: 7px; content: ""; background: var(--teal); }
 .card-topline { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 1.8rem; color: var(--purple); font-weight: 800; }
@@ -134,7 +137,7 @@ footer p { margin: 0; }
 
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; }
-  .hero-visual { min-height: 360px; }
+  .hero-visual { min-height: auto; }
   .event-strip { grid-template-columns: repeat(2, 1fr); }
   .event-strip div:last-child { grid-column: span 2; }
   .route-grid, .rules-list, .challenge-grid, .safety-section { grid-template-columns: 1fr; }

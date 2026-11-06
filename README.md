@@ -4,12 +4,12 @@ Public event-information website for the GLTaco50K challenge run planned for Aug
 
 ## Current status
 
-The event is in the planning stage. Routes, capacity, rules, permissions, and registration details remain subject to final field and agency review.
+The event is in the planning stage. The West Oakland Loop, capacity, rules, permissions, and registration details remain subject to final field and agency review.
 
 ## Publishing
 
-This is a static website designed for GitHub Pages.
+This is a static website designed for GitHub Pages. Publish the repository's `main` branch from the repository root.
 
 ## Related app
 
-The separate Runner Hub supports registration, route information, checkpoint proof, progress tracking, and event updates.
+The separate Runner Hub supports registration, West Oakland route information, checkpoint proof, progress tracking, and event updates.
